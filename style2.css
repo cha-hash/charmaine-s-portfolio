@@ -1,0 +1,174 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+   background: url(macbook.jpg) no-repeat top center; 
+   background-size: cover;
+   height: 100vh;
+}
+
+.wrapper{
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-field .msg{
+    width: 48%;
+}
+
+.input-field .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0; 
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 185px;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+h1{
+    color: white;
+}
+
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15PX;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg{
+        height: 300px;
+    }
+    .input-field .msg{
+        width: 100%;
+    }
+
+    .contact-form{
+        margin-top: 10px;
+    }
+
+    body{
+        background-size: cover;
+        height: 150vh;
+    }
+
+}
+
+/*side bar*/
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+}
+
+.nav a:hover{
+    color:#ccc;
+    transition: 0.4s; 
+}
+
+.nav .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.slide a {
+    color: black;
+    font-size: 36px;
+}
+
+#content{
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*footer*/
+
+footer{
+    padding-top: 30px;
+}
+  
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+.icons img{
+    margin: 15px;
+}

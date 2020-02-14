@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>Charmaine Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style1.css" media="all">
+</head>
+
+<body>
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="wrapper">
+            <h1 class="heading">ABOUT ME</h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="shasha.jpg" alt="profile image" class="profile image">
+                        <h2>About me & Education</h2>
+                        <p class="about">
+                        My name is Bukeka Chamaine Manyisane but I prefer
+                        being called Charmaine because of the meaning of
+                        the name which is Song. I was born and raised in 
+                        Cape Town. I grew up as child that like to be 
+                        alone and be in my own space. I love reading and
+                        discovering new things, which makes me to be  
+                        adverturous. I love singing alot.<br>
+                        I started studying at Nkazimlo Primary in Khayelitsha
+                        and attended my high school in Chris Hani Arts and 
+                        Culture were I discovered my talent of singing but 
+                        because of parent I studied commercial studies. I 
+                        passed my matric in 2015 and inrolled in CPUT in 2016
+                        were I grew love of computer doing Finacial Information
+                        Systems and planning to further it anytime soon...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="church.jpg" alt="profile image" class="profile image">
+                        <h2>Skills & Experience</h2>
+                        <p class="about">
+                        Skills that I have I got them in high school and tertiary 
+                        level. I am good with problem-solving which makes me a 
+                        good thinker because I always think out of box and I am
+                        mind driven. With computer skill I am good at word, power
+                        point and excel. Also I have created apps using Visual Basic
+                        and also know a bit of the following languages which are HTML 
+                        CSS and a bit of Javascript and Python.
+                        I have never been employed in my life, I was always a student 
+                        because I always known what I want in life and what I want to 
+                        achieve.
+                        </p>
+                    </div> 
+                </div>
+            
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="mega.jpg" alt=" profile image" class="profile image">
+                        <h2>Personal Goals & My Objectives</h2>
+                        <p class="about">
+                        Self Direction<br>
+                        Diligence<br>
+                        Finacial Stability<br>
+                        Health & Physical Fitness<br>
+                        Personal Resiliance<br>
+                        Professional Skills<br>
+                        Technical Skills<br>
+                        To secure a challenging position in a reputable organization to expand
+                        my learnings, knowledge, and skills.<br>
+                        To make use of my interpersonal skills to achieve my goals<br>
+                        Secure a responsible career opportunity to fully utilize my training and skills. 
+                        </p>
+                    </div>
+                </div>
+                <h3>"The biggest adventure of your life is to live the life of your dreams."<br>
+                     - Oprah Winfrey.</h3>
+        </div>
+
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
+</body>
+
+</html>

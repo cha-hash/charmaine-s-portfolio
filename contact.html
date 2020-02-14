@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <title>Charmaine Portfolio</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+            <div id="menu" class="nav">
+                <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="wrapper"> 
+                <form id="contact-form">
+                        <div class="contact-form">
+                            <div class="input-field">
+                                <h1>GET IN TOUCH</h1>
+                                <input type="text" name="name" id="name" class="input" placeholder="Name">
+                                <input type="text" name="email" id="email" class="input" placeholder="Email Address">
+                                <input type="text" name="phone" id="phone" class="input" placeholder="Phone">
+                                <input type="text" name="subject" id="subject" class="input"  placeholder="Subject">
+                            </div>
+                            <div class="msg">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                                <div class="g-recaptcha" data-sitekey="6Ld4P9gUAAAAAJhYip99gAmGReWusOzMTlQ4pB0k"></div>
+                                <input class="btn" type="submit" Submit>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function openSlideMenu() {
+                document.getElementById('menu').style.width = '250px';
+                document.getElementById('content').style.marginLeft = '250px';
+            }
+            function closeSlideMenu() {
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+            }
+        </script>  
+    </body>
+    <footer>
+        <div class="icons">
+            <div><a href="https://www.facebook.com" target="_blank"><img src="facebook.png"width="50px"height="50px"></a></div>
+            <div><a href="https://twitter.com" target="_blank"><img src="twitter.png"width="50px"height="50px"></a></div>
+            <div><a href="https://www.instagram.com" target="_blank"><img src="instagram.png"width="50px"height="50px"></a></div>
+            <div><a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png"width="50px"height="50px"></a></div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"></script>
+
+</html>
